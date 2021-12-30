@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Header } from './components/AppHeader/Header';
+import { PageLayout } from './components/Pages/PageLayout';
+import { Character } from './types';
 
 function App() {
+
+  const [characters, setCharacters] = React.useState<Character[]>([]);
+  const [page, setPage] = React.useState<number>(0);
+
+  const changePage = (newPage: number) => {
+    setPage(newPage);
+    // Think about validations...
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="root">
+        <Header changePage={changePage}/>
+        <PageLayout page={page} characters={characters} setCharacters={setCharacters} />
+      </div>
   );
 }
 

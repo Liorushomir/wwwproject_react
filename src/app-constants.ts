@@ -1,0 +1,1 @@
+export const pages = ['Create New Poll', 'My Polls', 'FAQ'];
