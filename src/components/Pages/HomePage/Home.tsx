@@ -1,3 +1,6 @@
+import React from 'react';
+import '../../../static/css/App.css';
+
 export const Home = () => {
 
     return (

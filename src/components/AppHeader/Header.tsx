@@ -11,7 +11,7 @@ export const Header: React.FC<HeaderProps> = ({
 
     return (
         <div className='header-container'>
-            <h1 className='app-header'> SurveyMaster </h1>
+            <h1 className='app-header'> SurveyBot9000 </h1>
             <Navbar changePage={changePage}/>
         </div>
     )
