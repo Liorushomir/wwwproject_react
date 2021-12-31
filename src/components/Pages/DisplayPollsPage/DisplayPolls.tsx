@@ -6,8 +6,7 @@ export const DisplayPolls = () => {
 
     return (
         <div className='display-polls-container'>
-            <h2 > FAQ </h2>
-
+            <h2> The page to display polls </h2>
         </div>
 
     )

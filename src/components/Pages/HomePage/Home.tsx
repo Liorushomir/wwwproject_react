@@ -4,7 +4,6 @@ import '../../../static/css/App.css';
 export const Home = () => {
 
     return (
-        <>
             <div className="home-page-container">
                 <h2>SurveyBot9000</h2>
                 <div>
@@ -13,7 +12,5 @@ export const Home = () => {
                     <p>Start working, or else.</p>
                 </div>
             </div>
-        </>
-
     )
 }

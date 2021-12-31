@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../static/css/App.css';
-import { DisplayPolls } from './DisplayPollsPage/DisplayPolls';
-import {CreatePoll} from './CreatePollPage/CreatePoll';
-import { FAQ } from './FAQPage/FAQ';
 import { Home } from './HomePage/Home';
+import { CreatePoll } from './CreatePollPage/CreatePoll';
+import { DisplayPolls } from './DisplayPollsPage/DisplayPolls';
+import { FAQ } from './FAQPage/FAQ';
 
 export interface PageLayoutProps {
     page: number;

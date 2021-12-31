@@ -2,17 +2,17 @@ import React from 'react';
 import { pages } from '../../static/app-constants';
 import '../../static/css/App.css';
 
-export interface NavbarProps {
+export interface NavbarProps{
     changePage(newPage: number): void;
 }
+
+
 export const Navbar: React.FC<NavbarProps> = ({
-    changePage,
+                                                changePage
 }) => {
-    
     const handlePageChange = (page: string) => {
-        // Think about a better way to do that:
-        switch(page) {
-            case 'Home Page':
+        switch (page) {
+            case 'Home':
                 changePage(0);
                 break;
             case 'Create New Poll':
@@ -26,12 +26,12 @@ export const Navbar: React.FC<NavbarProps> = ({
                 break;
             default:
                 break;
-        }    
+        }
     }
 
     return (
         <div className='nav-tab'>
-            {pages.map(page => 
+             {pages.map(page =>
                 <button key={page} className='nav-button' onClick={() => handlePageChange(page)}>
                     {page}
                 </button>)}
