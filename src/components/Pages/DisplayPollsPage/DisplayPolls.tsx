@@ -1,10 +1,10 @@
 import React from 'react';
-import '../../../App.css';
-import { Character } from '../../../types';
+import '../../../static/css/App.css';
+import { Character } from '../../../static/types';
 import { CharacterCard } from '../CreatePollPage/CharacterCard';
 
 
-export const About = () => {
+export const DisplayPolls = () => {
     
     const [ fetchingData, setFetchingData ] = React.useState(true);
     const [ aboutRandomCharacter, setAboutRandomCharacter ] = React.useState<Character>();

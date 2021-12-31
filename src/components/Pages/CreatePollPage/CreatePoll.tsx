@@ -1,12 +1,21 @@
 import React from 'react';
-import '../../../../src/App.css';
-
-// export interface AmigosPageProps {
-//     characters: Character[];
-//     setCharacters: React.Dispatch<React.SetStateAction<Character[]>>;
-// }
+import '../../../static/css/App.css';
 
 export interface CreatePollPageProps{
+
+}
+
+export const CreatePoll: React.FC<CreatePollPageProps> = () =>{
+    return (
+      <div>
+          PollPage
+      </div>
+    );
+}
+
+
+
+export interface CreatePollPageProps2{
     question: string;
     answers: string[];
     multiple_answer: boolean;
@@ -14,7 +23,7 @@ export interface CreatePollPageProps{
     setQuestion: React.Dispatch<React.SetStateAction<string>> //todo: ???
 }
 
-export const CreatePollPage: React.FC<CreatePollPageProps> = ({
+export const CreatePollPage2: React.FC<CreatePollPageProps2> = ({
                                                                   question,
                                                                   answers,
                                                                   multiple_answer,

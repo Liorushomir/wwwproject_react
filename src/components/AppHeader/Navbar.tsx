@@ -1,6 +1,6 @@
 import React from 'react';
-import { pages } from '../../app-constants';
-import '../../App.css';
+import { pages } from '../../static/app-constants';
+import '../../static/css/App.css';
 
 export interface NavbarProps {
     changePage(newPage: number): void;
@@ -12,14 +12,17 @@ export const Navbar: React.FC<NavbarProps> = ({
     const handlePageChange = (page: string) => {
         // Think about a better way to do that:
         switch(page) {
-            case 'Create New Poll':
+            case 'Home Page':
                 changePage(0);
                 break;
-            case 'My Polls':
+            case 'Create New Poll':
                 changePage(1);
                 break;
-            case 'FAQ':
+            case 'My Polls':
                 changePage(2);
+                break;
+            case 'FAQ':
+                changePage(3);
                 break;
             default:
                 break;

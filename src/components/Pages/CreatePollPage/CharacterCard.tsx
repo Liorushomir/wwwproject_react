@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../../../src/App.css';
-import { Character } from '../../../types';
+import '../../../static/css/App.css';
+import { Character } from '../../../static/types';
 
 export interface CharacterCardProps {
     character: Character,

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../src/App.css';
+import '../../../static/css/App.css';
 
 export const FAQ = () => {
 
