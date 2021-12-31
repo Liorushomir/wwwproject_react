@@ -1,18 +1,12 @@
 import React from 'react';
 import '../../../../src/App.css';
-import { faqContent } from './faq-content';
 
 export const FAQ = () => {
 
     return (
         <div className='about-page-container'>
-            <h2 > 🥒🥒🥒🥒 FAQ 🥒🥒🥒🥒 </h2>
-            { faqContent.map((faq, id) => 
-                <details>
-                    <summary>{faq.question}</summary>
-                    {faq.answer}
-                </details>
-            )}                        
+            <h2 > FAQ </h2>
+
         </div>
     )
 }
